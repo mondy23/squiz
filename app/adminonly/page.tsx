@@ -1,11 +1,12 @@
 import QuizUploader from '@/components/layout/quizGen'
 import { prisma } from '../utils/db'
+import { Question } from '@prisma/client' // optional, if you want explicit type
 
 export default async function Home() {
   // Fetch all questions from the database
-  const questions = await prisma.question.findMany()
-  // OR for explicit type:
-  // const questions: Awaited<ReturnType<typeof prisma.question.findMany>> = await prisma.question.findMany()
+  const questions: Question[] = await prisma.question.findMany()
+  // OR using type inference:
+  // const questions = await prisma.question.findMany()
 
   return (
     <div className="flex gap-6 p-6">
@@ -14,7 +15,7 @@ export default async function Home() {
       <div className="border rounded-lg p-4 w-full h-[calc(100vh-3rem)] overflow-y-auto">
         {questions.length > 0 ? (
           <ul className="space-y-2">
-            {questions.map((q) => (
+            {questions.map((q: Question) => ( // explicitly typed q
               <li key={q.id} className="border-b pb-1">
                 <strong>{q.question}</strong>
                 <br />
