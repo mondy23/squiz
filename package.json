@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "postinstall": "prisma generate",
     "@prisma/client": "^6.18.0",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
