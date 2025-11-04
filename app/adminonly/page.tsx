@@ -1,11 +1,10 @@
 import QuizUploader from '@/components/layout/quizGen'
 import { prisma } from '../utils/db'
+import { Prisma } from '@prisma/client'
 
 export default async function Home() {
-  // Fetch all questions from the database
-  const questions = await prisma.question.findMany()
-  // Explicit type (optional):
-  // const questions: Array<Prisma.QuestionGetPayload<{}>> = await prisma.question.findMany()
+  // Fetch all questions
+  const questions: Prisma.QuestionGetPayload<{}>[] = await prisma.question.findMany()
 
   return (
     <div className="flex gap-6 p-6">
@@ -14,7 +13,7 @@ export default async function Home() {
       <div className="border rounded-lg p-4 w-full h-[calc(100vh-3rem)] overflow-y-auto">
         {questions.length > 0 ? (
           <ul className="space-y-2">
-            {questions.map((q) => (
+            {questions.map((q: Prisma.QuestionGetPayload<{}>) => (
               <li key={q.id} className="border-b pb-1">
                 <strong>{q.question}</strong>
                 <br />
