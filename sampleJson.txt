@@ -1,0 +1,125 @@
+{
+  "topic": "Data Structures and Algorithms",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which data structure uses the Last In, First Out (LIFO) principle?",
+      "choices": ["Queue", "Stack", "Array", "Linked List"],
+      "answer": "Stack"
+    },
+    {
+      "id": 2,
+      "question": "What is the time complexity of searching in a balanced binary search tree?",
+      "choices": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+      "answer": "O(log n)"
+    },
+    {
+      "id": 3,
+      "question": "In a min-heap, the parent node is always smaller than its child nodes.",
+      "choices": ["True", "False"],
+      "answer": "True"
+    },
+    {
+      "id": 4,
+      "question": "Which data structure is best suited for implementing recursion?",
+      "choices": ["Queue", "Stack", "Array", "Graph"],
+      "answer": "Stack"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following sorting algorithms has the best average time complexity?",
+      "choices": ["Bubble Sort", "Selection Sort", "Merge Sort", "Insertion Sort"],
+      "answer": "Merge Sort"
+    },
+    {
+      "id": 6,
+      "question": "What is the time complexity of accessing an element in an array by index?",
+      "choices": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+      "answer": "O(1)"
+    },
+    {
+      "id": 7,
+      "question": "Which data structure is used for Breadth-First Search (BFS) in a graph?",
+      "choices": ["Stack", "Queue", "Heap", "Tree"],
+      "answer": "Queue"
+    },
+    {
+      "id": 8,
+      "question": "Which traversal method of a binary tree visits nodes in the order: left, root, right?",
+      "choices": ["Preorder", "Postorder", "Inorder", "Level Order"],
+      "answer": "Inorder"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is a non-linear data structure?",
+      "choices": ["Array", "Linked List", "Queue", "Tree"],
+      "answer": "Tree"
+    },
+    {
+      "id": 10,
+      "question": "A hash function maps keys to ______.",
+      "choices": ["Indexes", "Nodes", "Edges", "Stacks"],
+      "answer": "Indexes"
+    },
+    {
+      "id": 11,
+      "question": "Which sorting algorithm is considered the fastest in practice for large datasets?",
+      "choices": ["Bubble Sort", "Quick Sort", "Insertion Sort", "Merge Sort"],
+      "answer": "Quick Sort"
+    },
+    {
+      "id": 12,
+      "question": "A circular queue can help efficiently utilize space compared to a normal queue.",
+      "choices": ["True", "False"],
+      "answer": "True"
+    },
+    {
+      "id": 13,
+      "question": "Which data structure allows both FIFO and LIFO operations?",
+      "choices": ["Deque", "Queue", "Stack", "Array"],
+      "answer": "Deque"
+    },
+    {
+      "id": 14,
+      "question": "Which algorithm is used to find the shortest path in a weighted graph?",
+      "choices": ["Kruskal’s", "Prim’s", "Dijkstra’s", "Bellman-Ford"],
+      "answer": "Dijkstra’s"
+    },
+    {
+      "id": 15,
+      "question": "Which data structure is ideal for implementing priority queues?",
+      "choices": ["Stack", "Heap", "Linked List", "Tree"],
+      "answer": "Heap"
+    },
+    {
+      "id": 16,
+      "question": "What is the worst-case time complexity of Quick Sort?",
+      "choices": ["O(n)", "O(n log n)", "O(log n)", "O(n^2)"],
+      "answer": "O(n^2)"
+    },
+    {
+      "id": 17,
+      "question": "Which traversal of a tree is used to get the nodes in ascending order in a BST?",
+      "choices": ["Preorder", "Inorder", "Postorder", "Level Order"],
+      "answer": "Inorder"
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is used to avoid collisions in a hash table?",
+      "choices": ["Chaining", "Sorting", "Stacking", "Indexing"],
+      "answer": "Chaining"
+    },
+    {
+      "id": 19,
+      "question": "Which algorithm is used for finding the minimum spanning tree?",
+      "choices": ["Dijkstra’s", "Prim’s", "Bellman-Ford", "Floyd-Warshall"],
+      "answer": "Prim’s"
+    },
+    {
+      "id": 20,
+      "question": "A binary tree where every node has at most two children is called a complete binary tree.",
+      "choices": ["True", "False"],
+      "answer": "False"
+    }
+  ]
+}
